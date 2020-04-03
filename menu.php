@@ -4,6 +4,7 @@ get_header();
 
 		<nav id="site-navigation" class="main-navigation">
 			<h1><?php esc_html_e( 'Menu', 'susty' );?></h1>
+			<?php get_search_form(); ?>
 			<?php
 			wp_nav_menu( array(
 				'theme_location' => 'menu-1',
